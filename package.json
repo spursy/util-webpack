@@ -1,0 +1,22 @@
+{
+  "name": "util-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spursy/util-webpack.git"
+  },
+  "keywords": [
+    "Yyang18501"
+  ],
+  "author": "spursy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spursy/util-webpack/issues"
+  },
+  "homepage": "https://github.com/spursy/util-webpack#readme"
+}
