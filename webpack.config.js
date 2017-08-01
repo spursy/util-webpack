@@ -12,7 +12,7 @@ module.exports = {
     },
     //入口文件输出配置
     output: {
-        path: '/Users/spursy/Develop/util-webpack/dist/js',
+        path: '/Users/spursy/Develop/util-webpack/dist',
         filename: 'js/[name]-[chunkhash].js',
         publicPath: 'http://cdn.com/'
     },
