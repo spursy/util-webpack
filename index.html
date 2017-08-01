@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>webpack demo</title>
+    </head>
+    <body>
+        <%= htmlWebpackPlugin.options.date %>
+        <%for (var key in htmlWebpackPlugin ) { %>
+            <%= key%>
+        <%}%>
+        <script type = "text/javascript" src = "bundle.js">
+        </script>
+    </body>
+</html>
