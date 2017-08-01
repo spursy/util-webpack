@@ -11,9 +11,6 @@
     "type": "git",
     "url": "git+https://github.com/spursy/util-webpack.git"
   },
-  "keywords": [
-    "Yyang18501"
-  ],
   "author": "spursy",
   "license": "ISC",
   "bugs": {
@@ -24,6 +21,7 @@
     "webpack": "^3.4.1"
   },
   "devDependencies": {
-    "html-webpack-plugin": "^2.30.1"
+    "html-webpack-plugin": "^2.30.1",
+    "webpack": ""
   }
 }
