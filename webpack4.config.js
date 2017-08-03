@@ -22,9 +22,18 @@ module.exports = {
                 options: {
                     presets: ['env']
                 }
+            },
+            {
+                test:/\.css$/,
+                loader: 'style-loader!css-loader?importLoaders=1!postcss-loader'
             }
         ]
     },
+    postcss: [
+        require('autoprefixer')({
+            broswers: ['last 5 versions']
+        })
+    ],
     plugins: [
         new htmlWebPackPlugin({
             filename: 'index.html',
