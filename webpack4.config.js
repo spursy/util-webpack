@@ -25,15 +25,21 @@ module.exports = {
             },
             {
                 test:/\.css$/,
-                loader: 'style-loader!css-loader?importLoaders=1!postcss-loader'
-            }
+                // loader: 'style-loader!css-loader?importLoaders=1!postcss-loader'
+                use: ['style-loader',{loader:'css-loader', options: {modules: false, importLoaders: 1}}, 'postcss-loader']
+            }    
+            // }, 
+            // {
+            //     test:/\.less$/,
+            //     loader: 'style!css!postcss-loader!less'
+            // }
         ]
     },
-    postcss: [
-        require('autoprefixer')({
-            broswers: ['last 5 versions']
-        })
-    ],
+    // postcss: [
+    //     require('autoprefixer')({
+    //         broswers: ['last 5 versions']
+    //     })
+    // ],
     plugins: [
         new htmlWebPackPlugin({
             filename: 'index.html',
