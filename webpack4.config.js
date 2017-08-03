@@ -26,13 +26,16 @@ module.exports = {
             {
                 test:/\.css$/,
                 // loader: 'style-loader!css-loader?importLoaders=1!postcss-loader'
-                use: ['style-loader',{loader:'css-loader', options: {modules: false, importLoaders: 1}}, 'postcss-loader']
-            }    
-            // }, 
-            // {
-            //     test:/\.less$/,
-            //     loader: 'style!css!postcss-loader!less'
-            // }
+                use: ['style-loader',{loader:'css-loader', options: {modules: false, importLoaders: 1}}, 'postcss-loader']    
+            }, 
+            {
+                test:/\.less$/,
+                loader: 'style-loader!css-loader!postcss-loader!less-loader'
+            },
+            {
+                test:/\.less$/,
+                loader: 'style-loader!css-loader!postcss-loader!less-loader'
+            }
         ]
     },
     // postcss: [
