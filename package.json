@@ -36,6 +36,6 @@
     "less-loader": "^4.0.5",
     "postcss-loader": "^2.0.6",
     "style-loader": "^0.18.2",
-    "webpack": ""
+    "webpack": "^3.4.1"
   }
 }

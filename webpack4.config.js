@@ -13,7 +13,7 @@ module.exports = {
         filename: 'js/[name].bundle.js'
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
                 loader:'babel-loader',
@@ -46,11 +46,6 @@ module.exports = {
             }
         ]
     },
-    // postcss: [
-    //     require('autoprefixer')({
-    //         broswers: ['last 5 versions']
-    //     })
-    // ],
     plugins: [
         new htmlWebPackPlugin({
             filename: 'index.html',
