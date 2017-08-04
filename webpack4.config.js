@@ -33,8 +33,16 @@ module.exports = {
                 loader: 'style-loader!css-loader!postcss-loader!less-loader'
             },
             {
-                test:/\.less$/,
-                loader: 'style-loader!css-loader!postcss-loader!less-loader'
+                test:/\.lass$/,
+                loader: 'style-loader!css-loader!postcss-loader!lass-loader'
+            },
+            {
+                test:/\.html$/,
+                loader: 'html-loader'
+            },
+            {
+                test:/\.tpl$/,
+                loader:'ejs-loader'
             }
         ]
     },

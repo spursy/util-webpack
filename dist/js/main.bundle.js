@@ -522,7 +522,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var App = function App() {
     var NUM = 1;
     alert(NUM);
-    console.log(_layer2.default);
+    console.log(layer);
+
+    var layer = new _layer2.default();
+    var dom = document.getElementById('app');
+    dom.innerHTML = layer.tpl({
+        name: 'john',
+        arr: ['apple', 'xiaomi', 'oppo']
+    });
 };
 
 new App();
@@ -694,12 +701,19 @@ Object.defineProperty(exports, "__esModule", {
 
 __webpack_require__(8);
 
+var _layer = __webpack_require__(10);
+
+var _layer2 = _interopRequireDefault(_layer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function layer() {
     return {
         name: 'layer',
-        tpl: tpl
+        tpl: _layer2.default
     };
-} // import tpl from './layer.html'
+}
+
 exports.default = layer;
 
 /***/ }),
@@ -746,6 +760,29 @@ exports.push([module.i, ".layer {\n  width: 600px;\n  height: 200px;\n  backgrou
 
 // exports
 
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports) {
+
+module.exports = function (obj) {
+obj || (obj = {});
+var __t, __p = '', __j = Array.prototype.join;
+function print() { __p += __j.call(arguments, '') }
+with (obj) {
+__p += ' <div class = "layer">\n    <div> This is a layer  </div>\n    <div>this is a ' +
+((__t = ( name)) == null ? '' : __t) +
+'</div>\n    ';
+ for (var i = 0; i < arr.length; i ++) {;
+__p += '\n        ' +
+((__t = ( arr[i])) == null ? '' : __t) +
+'\n    ';
+};
+__p += '\n<div> \n';
+
+}
+return __p
+}
 
 /***/ })
 /******/ ]);
