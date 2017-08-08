@@ -763,14 +763,16 @@ exports.push([module.i, ".layer {\n  width: 600px;\n  height: 200px;\n  backgrou
 
 /***/ }),
 /* 10 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 module.exports = function (obj) {
 obj || (obj = {});
 var __t, __p = '', __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 with (obj) {
-__p += ' <div class = "layer">\n    <div> This is a layer  </div>\n    <div>this is a ' +
+__p += ' <div class = "layer">\n    <img src = "' +
+((__t = ( __webpack_require__(11))) == null ? '' : __t) +
+'"/>\n    <div> This is a layer  </div>\n    <div>this is a ' +
 ((__t = ( name)) == null ? '' : __t) +
 '</div>\n    ';
  for (var i = 0; i < arr.length; i ++) {;
@@ -783,6 +785,12 @@ __p += '\n<div> \n';
 }
 return __p
 }
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAA7VBMVEVHcExmZmZmZmZtbW1nZ2dqampnZ2dmZmZmZmZmZmZmZmZvb29mZmZmZmZoaGhnZ2dmZmZ/f39nZ2dmZmZmZmZnZ2dtbW1mZmZmZmZmZmZmZmZmZmZoaGhmZmZmZmZnZ2dmZmZmZmZmZmZmZmZnZ2doaGhubm5paWlsbGxnZ2dmZmZmZmZmZmZmZmZnZ2dnZ2dmZmZmZmZmZmZmZmaqqqpnZ2dmZmZmZmZmZmZnZ2d/f39mZmZmZmZmZmZmZmZmZmZmZmZnZ2dmZmZmZmZnZ2dpaWlmZmZmZmZnZ2dmZmZpaWlmZmZmZmZmZmZmZmaCq9OMAAAATnRSTlMA8fwHvBiX0+P9+RAt51OF2wZ59G5sFZZ4d7DyQhSzb6FX3cdPFhcpIWPvv81SL3T7Cp2aAyX1D+pnAiP6rozm0bfaQbI/ZsggeiK6BdQ/sZGwAAAA0ElEQVQ4y+3UxRLCMBAG4ECBUqy4u7u7u/O//+NwgIFemu4BDszwn7/ZTHY3Yex7Ed1FGgSQ8RppENAniRDiH34IWmUbseIFt9OZAh0AcEgYNeHVDgCQDCWrxmVkPGMJp1o8eJTwisfEa8/qDWHmwZ2dCJmwX9MgY2PHggZ7W1LFwXxKObo7GpIus1kqulP2qcHJTMH0ppjaZPoWhTPY1GetiDPL255XdA0XI0Cpk1Nd3KDu7Sp13lvwB5oPlq5pva9CHEAkJBD+vmi1nWc/mztvoXOtll3ShAAAAABJRU5ErkJggg=="
 
 /***/ })
 /******/ ]);
